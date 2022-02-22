@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primer entrega</title>
 </head>
+
+
+
+
 <body>
     <h1>Casa de Cambio</h1>
+
+    <input type="text" class="inputUN" placeholder="ingrese su nombre" name="name" required>
+    <p class="pUserName"></p>
+    <input type="text" class="inputDivisa" placeholder="ingrese la divisa" name="divisa" required>
+    <p class="pDivisa"></p>
+    <input type="text" class="inputCant" placeholder="ingrese la cantidad a convertir" name="cant" required>
+    <p class="pCant"></p>
+    <input onclick="enviar();" type="submit" value="ENVIAR">
+    <input type="submit" onclick="anade();" value="GUARDAR">
+
+    <ul id="lista">
+        <li></li>
+        <li></li>
+        <li></li>
+        
+    </ul>
     <style>
-        *{
+        * {
             background-color: #333;
             color: #fff;
         }
-        body{
+
+        body {
             text-align: center;
         }
-        ul li{
+
+        ul li {
             list-style: none;
-        }
+        } 
     </style>
-    
 
 
 
-    <script src="./js/main.js"></script>
+
+    <script src="./js/main1.js"></script>
 </body>
+
 </html>
