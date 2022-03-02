@@ -1,0 +1,218 @@
+[
+    {
+      "precio": 6000,
+      "id": 1,
+      "title": "Set Matero de Cuero",
+      "imgUrl": "./img/kit.jpg"
+    },
+    {
+      "precio": 3500,
+      "id": 2,
+      "title": "Set Matero de Metal",
+      "imgUrl": "./img/kit2.jpg"
+    },
+    {
+      "precio": 4500,
+      "id": 3,
+      "title": "Set Matero Cuero Ecologico",
+      "imgUrl": "./img/kit3.jpg"
+    },
+    {
+      "precio": 3000,
+      "id": 4,
+      "title": "Set Matero Aluminio",
+      "imgUrl": "./img/kit4.jpg"
+    },
+    {
+      "precio": 5000,
+      "id": 5,
+      "title": "Set Matero Camionero",
+      "imgUrl": "./img/kit5.jpg"
+    },
+    {
+      "precio": 2500,
+      "id": 6,
+      "title": "Set Matero Torpedo",
+      "imgUrl": "./img/kit6.jpg"
+    },
+    {
+      "precio": 800,
+      "id": 7,
+      "title": "Bombilla pico de Loro acero inox.",
+      "imgUrl": "./img/bombilla.jpg"
+    },
+    {
+      "precio": 2000,
+      "id": 8,
+      "title": "Bombilla pico de Loro Alpaca",
+      "imgUrl": "./img/bombilla2.jpg"
+    },
+    {
+      "precio": 1200,
+      "id": 9,
+      "title": "Bombilla pico de Loro filtro fino",
+      "imgUrl": "./img/bombilla3.jpg"
+    },
+    {
+      "precio": 800,
+      "id": 10,
+      "title": "Bombilla Plana",
+      "imgUrl": "./img/bombilla4.jpg"
+    },
+    {
+      "precio": 1200,
+      "id": 11,
+      "title": "Bombilla pico de Loro Corta",
+      "imgUrl": "./img/bombilla5.jpg"
+    },
+    {
+      "precio": 900,
+      "id": 12,
+      "title": "Canarias Clasica",
+      "imgUrl": "./img/canarias.jpg"
+    },
+    {
+      "precio": 900,
+      "id": 13,
+      "title": "Canarias Hierbas",
+      "imgUrl": "./img/canarias2.jpg"
+    },
+    {
+      "precio": 900,
+      "id": 14,
+      "title": "Canarias Te Verde y Jengibre",
+      "imgUrl": "./img/canarias3.jpg"
+    },
+    {
+      "precio": 900,
+      "id": 15,
+      "title": "Canarias Edicion Especial",
+      "imgUrl": "./img/canarias4.jpg"
+    },
+    {
+      "precio": 900,
+      "id": 16,
+      "title": "Canarias Serena",
+      "imgUrl": "./img/canarias5.jpg"
+    },
+    {
+      "precio": 2000,
+      "id": 17,
+      "title": "Mate Camionero Simple",
+      "imgUrl": "./img/mateCamionero.jpg"
+    },
+    {
+      "precio": 2200,
+      "id": 18,
+      "title": "Mate Camionero Virola Acero",
+      "imgUrl": "./img/mateCamionero2.jpeg"
+    },
+    {
+      "precio": 2500,
+      "id": 19,
+      "title": "Mate Camionero Virola Ancha",
+      "imgUrl": "./img/mateCamionero3.jpg"
+    },
+    {
+      "precio": 2300,
+      "id": 20,
+      "title": "Mate Camionero Calabaza",
+      "imgUrl": "./img/mateCamionero4.jpg"
+    },
+    {
+      "precio": 3000,
+      "id": 21,
+      "title": "Mate Camionero Premium",
+      "imgUrl": "./img/mateCamionero5.jpg"
+    },
+    {
+      "precio": 2500,
+      "id": 22,
+      "title": "Mate Imperial Premium Marron",
+      "imgUrl": "./img/mateImperial.jpg"
+    },
+    {
+      "precio": 3000,
+      "id": 23,
+      "title": "Mate Imperia Premium Negro",
+      "imgUrl": "./img/mateImperial2.jpg"
+    },
+    {
+      "precio": 2800,
+      "id": 24,
+      "title": "Mate Imperial Premium Virola Alpaca",
+      "imgUrl": "./img/mateImperial3.jpg"
+    },
+    {
+      "precio": 2750,
+      "id": 25,
+      "title": "Mate Imperial Premium EcoCuero",
+      "imgUrl": "./img/mateImperial4.jpg"
+    },
+    {
+      "precio": 4000,
+      "id": 26,
+      "title": "Mate Imperial Premium Detalle Oro",
+      "imgUrl": "./img/mateImperial5.jpg"
+    },
+    {
+      "precio": 2200,
+      "id": 27,
+      "title": "Mate Torpedo Basico",
+      "imgUrl": "./img/mateTorpedo.jpg"
+    },
+    {
+      "precio": 2800,
+      "id": 28,
+      "title": "Mate Torpedo Virola Artesanal",
+      "imgUrl": "./img/mateTorpedo2.jpg"
+    },
+    {
+      "precio": 2000,
+      "id": 29,
+      "title": "Mate Torpedo Virola Acero",
+      "imgUrl": "./img/mateTorpedo3.jpg"
+    },
+    {
+      "precio": 3800,
+      "id": 30,
+      "title": "Mate Torpedo Premium Virola Alpaca",
+      "imgUrl": "./img/mateTorpedo4.jpg"
+    },
+    {
+      "precio": 3400,
+      "id": 31,
+      "title": "Mate Torpedo Premium Virola Acero",
+      "imgUrl": "./img/mateTorpedo5.jpg"
+    },
+    {
+      "precio": 1200,
+      "id": 32,
+      "title": "Yerbera de EcoCuero",
+      "imgUrl": "./img/yerbera.jpg"
+    },
+    {
+      "precio": 1450,
+      "id": 33,
+      "title": "Yerbera de Cuero",
+      "imgUrl": "./img/yerbera2.jpg"
+    },
+    {
+      "precio": 1600,
+      "id": 34,
+      "title": "Yerbera EcoCuero con Porta Bombilla",
+      "imgUrl": "./img/yerbera3.jpg"
+    },
+    {
+      "precio": 800,
+      "id": 35,
+      "title": "Yerbera de Metal",
+      "imgUrl": "./img/yerbera4.jpg"
+    },
+    {
+      "precio": 1500,
+      "id": 36,
+      "title": "Yerbera y Azucarera Metal",
+      "imgUrl": "./img/yerbera5.jpg"
+    }
+  ]
