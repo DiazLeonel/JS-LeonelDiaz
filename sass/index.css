@@ -1,0 +1,186 @@
+/*-----------COLORES----------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #CAD593;
+  /*----------NAV----------*/
+  /* ---------CARDS PRODUCTOS-------- */
+  /*---------TABLE----------*/
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #87A330;
+  height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3rem;
+  margin: auto 20px;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 30px;
+  list-style: none;
+}
+
+body nav ul li a {
+  word-spacing: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+body nav ul li a:hover {
+  background-color: #CAD593;
+  border-radius: 5px;
+  color: #000;
+  padding: 5px;
+}
+
+body .card-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  row-gap: 60px;
+}
+
+body .card-grid .div--card .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+body .card-grid .div--card .card .card-body {
+  height: 400px;
+  width: 250px;
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+body .card-grid .div--card .card .card-body:hover {
+  -webkit-transform: translateX(-0.2%) translateY(-0.2%);
+          transform: translateX(-0.2%) translateY(-0.2%);
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+}
+
+body .card-grid .div--card .card .card-body img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+body .card-grid .div--card .card .card-body h5 {
+  font-size: 1.2rem;
+  margin: 60px 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body .card-grid .div--card .card .card-body p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+body .card-grid .div--card .card .card-body button {
+  background-color: #C7D59F;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+body .card-grid .div--card .card .card-body button:hover {
+  background-color: #DAD998;
+  color: #000;
+}
+
+body table {
+  width: 70%;
+  border: 1px solid #000;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+body table td, body table th {
+  padding: 0.3em;
+}
+
+body table th,
+body table td {
+  border-bottom: 1px solid #000;
+  width: 25%;
+}
+
+body .letras {
+  font-weight: bold;
+}
+
+body .td-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 21px;
+  border-bottom: 1px solid #000;
+  border-collapse: collapse;
+}
+
+body .btn-danger {
+  background-color: #fa0000;
+  border: none;
+  padding: 0 5px;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .btn-info {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 0 3px;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */

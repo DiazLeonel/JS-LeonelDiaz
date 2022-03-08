@@ -1,8 +1,8 @@
 //------- VARIABLES -------//
-
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
+const cartNav = document.getElementById('carritoNav')
 
 const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
@@ -11,17 +11,23 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment();
 
 
+//darkmode
+const bdark = document.querySelector('#bDark');
+const body = document.querySelector('body');
+
+
 let carrito = {}
 
 //------- EVENTOS -------//
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
-    if(localStorage.getItem('carrito')){
-        carrito =JSON.parse(localStorage.getItem('carrito'))
+    if (localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
     }
 })
+
 
 cards.addEventListener('click', e => {
     addCarrito(e)
@@ -30,7 +36,6 @@ cards.addEventListener('click', e => {
 items.addEventListener('click', e => {
     btnAccion(e)
 })
-
 
 //------- FUNCTIONS -------//
 
@@ -116,14 +121,19 @@ const pintarFooter = () => {
     footer.innerHTML = ''
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = '<th scope="row" colspan="5">Carrito vacio - comience a comprar!</th>'
-    
+
         return
     }
 
     // sumar cantidad y sumar totales
-    const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)
+    const nCantidad = Object.values(carrito).reduce((acc, {
+        cantidad
+    }) => acc + cantidad, 0)
 
-    const nPrecio = Object.values(carrito).reduce((acc, {cantidad,precio}) => acc + cantidad * precio, 0)
+    const nPrecio = Object.values(carrito).reduce((acc, {
+        cantidad,
+        precio
+    }) => acc + cantidad * precio, 0)
 
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
@@ -135,29 +145,30 @@ const pintarFooter = () => {
     const btnVaciar = document.getElementById('vaciar-carrito')
     btnVaciar.addEventListener('click', () => {
         carrito = {}
-        pintarCarrito() 
+        pintarCarrito()
     })
 }
 
 
-const btnAccion = e =>{
+const btnAccion = e => {
 
     //accion de aumentar
-    if(e.target.classList.contains('btn-info')){
-        // carrito[e.target.dataset.id]
+    if (e.target.classList.contains('btn-info')) {
         const producto = carrito[e.target.dataset.id]
-        producto.cantidad++ //= carrito[e.target.dataset.id].cantidad + 1;
-        carrito[e.target.dataset.id] = {...producto}
+        producto.cantidad++
+        carrito[e.target.dataset.id] = {
+            ...producto
+        }
         pintarCarrito()
     }
 
-    if(e.target.classList.contains('btn-danger')){
-        const producto = carrito [e.target.dataset.id]
+    if (e.target.classList.contains('btn-danger')) {
+        const producto = carrito[e.target.dataset.id]
         producto.cantidad--
-        if (producto.cantidad === 0){
+        if (producto.cantidad === 0) {
             delete carrito[e.target.dataset.id]
         }
         pintarCarrito()
     }
     e.stopPropagation()
-}   
+}

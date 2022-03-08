@@ -1,0 +1,176 @@
+/*-----------COLORES----------*/
+
+
+$verde-osc: #243010;
+$verde-med:#2A3C24;
+$verde-mus: #4B5842;
+$verde-brill:#8FB339;
+$verde-casosc:#87A330;
+$verde-claro: #A1C349;
+$verde-tran:#B7CE63;
+$verde-past: #CAD593;
+$verde-transp:#C7D59F;
+$gris: #DADDD8;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CAD593;
+
+    /*----------NAV----------*/
+    nav {
+        display: flex;
+        background-color: #87A330;
+        height: 100px;
+        justify-content: space-between;
+
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 3rem;
+            margin: auto 20px;
+        }
+
+        ul {
+            display: flex;
+            margin: auto 30px;
+            list-style: none;
+
+            li {
+                a {
+                    word-spacing: 20px;
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 1.5rem;
+                    margin: 10px;
+
+                    &:hover {
+                        background-color: #CAD593;
+                        border-radius: 5px;
+                        color: #000;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ---------CARDS PRODUCTOS-------- */
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        row-gap: 60px;
+
+        .div--card {
+
+            .card {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+
+                .card-body {
+                    height: 400px;
+                    width: 250px;
+                    margin: 20px;
+                    background-color: #fff;
+                    text-align: center;
+                    border-radius: 10px;
+                    transition: 400ms;
+
+                    &:hover {
+                        transform: translateX(-0.2%) translateY(-0.2%);
+                        box-shadow: 5px 5px 10px #000;
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        margin-top: 20px;
+                    }
+
+                    h5 {
+                        font-size: 1.2rem;
+                        margin: 60px 10px;
+                        align-content: center;
+                        vertical-align: auto;
+                        flex-wrap: nowrap;
+
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        background-color: #C7D59F;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px;
+                        font-size: 1.1rem;
+                        margin-bottom: 20px;
+
+                        &:hover {
+                            background-color: #DAD998;
+                            color: #000;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    /*---------TABLE----------*/
+    table {
+        width: 70%;
+        border: 1px solid #000;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 0 auto;
+
+        td, th{
+            padding: 0.3em;
+        }
+        th,
+        td {
+            border-bottom: 1px solid #000;
+            width: 25%;
+        }
+    }
+    .letras{
+            font-weight: bold;
+    }
+    .td-cart{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 21px;
+        border-bottom: 1px solid #000;
+        border-collapse: collapse;
+    }
+
+    .btn-danger{
+        background-color: rgb(250, 0, 0);
+        border: none;
+        padding: 0 5px;
+        border-radius: 8px;
+        justify-content: center;
+    }
+    .btn-info{
+        background-color: rgb(0, 0, 255);
+        color: #fff;
+        border: none;
+        padding: 0 3px;
+        border-radius: 8px;
+        justify-content: center;
+    }
+    
+    
+}

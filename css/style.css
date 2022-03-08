@@ -1,0 +1,82 @@
+
+/*-----------COLORES----------*/
+
+
+#243010
+#87A330
+#A1C349
+#CAD593
+#2A3C24  
+#DADDD8
+#C7D59F
+#B7CE63
+#8FB339
+#4B5842 
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#CAD593 ;
+}
+
+/*----------NAV----------*/
+
+nav{
+    display: flex;
+    background-color: #87A330;
+    height: 100px;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    margin: auto 20px;
+}
+
+ul{
+    display: flex;
+    margin: auto 30px;
+    list-style: none;
+}
+
+a{
+    word-spacing: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+a:hover{
+    background-color:#CAD593 ;
+    border-radius: 5px;
+    color: #000;
+    padding: 5px;
+}
+
+/* ---------CARDS PRODUCTOS-------- */
+
+/*-----Width img-----*/
+
+img{
+    width: 150px;
+}
+
+.card-body{
+    height: 400px;
+    width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+div--card{
+    display: flex;
+
+}
