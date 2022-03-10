@@ -2,18 +2,12 @@
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
-const cartNav = document.getElementById('carritoNav')
 
 const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 
 const fragment = document.createDocumentFragment();
-
-
-//darkmode
-const bdark = document.querySelector('#bDark');
-const body = document.querySelector('body');
 
 
 let carrito = {}
@@ -105,7 +99,7 @@ const pintarCarrito = () => {
 
         //botones
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
-        templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
+        templateCarrito.querySelector('.vaciarCarrito').dataset.id = producto.id
 
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
@@ -162,7 +156,7 @@ const btnAccion = e => {
         pintarCarrito()
     }
 
-    if (e.target.classList.contains('btn-danger')) {
+    if (e.target.classList.contains('vaciarCarrito')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad--
         if (producto.cantidad === 0) {

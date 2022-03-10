@@ -136,7 +136,8 @@ body table {
   margin: 0 auto;
 }
 
-body table td, body table th {
+body table td,
+body table th {
   padding: 0.3em;
 }
 
@@ -148,6 +149,10 @@ body table td {
 
 body .letras {
   font-weight: bold;
+}
+
+body .precio::before {
+  content: "$";
 }
 
 body .td-cart {
@@ -163,7 +168,7 @@ body .td-cart {
   border-collapse: collapse;
 }
 
-body .btn-danger {
+body .vaciarCarrito {
   background-color: #fa0000;
   border: none;
   padding: 0 5px;
@@ -182,5 +187,9 @@ body .btn-info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.buyCart {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
